@@ -3,7 +3,7 @@ if(!file.exists("./project")){dir.create("./project")}
 source <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(source, destfile="./project/data.zip")
 
-unzip(zipfile="./project/Dataset.zip",exdir="./project")
+unzip(zipfile="./project/data.zip",exdir="./project")
 
 datafolder <- file.path("./project", "UCI HAR Dataset")
 rawdata <- list.files(datafolder, recursive=TRUE)
